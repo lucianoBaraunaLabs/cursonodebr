@@ -1,0 +1,1 @@
+Caso queira inicializar um projeto node com as configurações padrões do package.json basta digitar `npm init -y`
