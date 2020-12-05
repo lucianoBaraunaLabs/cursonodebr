@@ -11,7 +11,6 @@
 // caso esse parâmetro não exista ou apresente um erro o código mostra esse erro.
 // Para simular basta trocar null por qualquer outra coisa como por ex.: 132354;
 
-const { ALL } = require('dns');
 const util = require('util');
 const obterEnderecoAsync = util.promisify(obterEndereco);
 
@@ -55,7 +54,7 @@ function obterEndereco(idUsuario, callback) {
 
 // 1º Passo colocar o async para transformar a função numa promisse.
 
-main();
+
 
 async function main () {
   try {
@@ -86,3 +85,5 @@ async function main () {
     console.log('DEU RUIM: ', error);
   }
 }
+
+main();
